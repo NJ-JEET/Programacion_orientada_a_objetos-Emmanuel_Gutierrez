@@ -24,7 +24,7 @@ public class CLI {
 
         switch(opcion){
             case 1:
-                double imc =
+                double imc
                 }
                 break
             case 1:
