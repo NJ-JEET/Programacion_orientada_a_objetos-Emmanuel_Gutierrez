@@ -42,7 +42,7 @@ public class MENUCAJAS {
                     int cantidadCompra = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de cajas compradas:"));
                     GestorCajasPapel.registrarCompra(costoCompra, cantidadCompra);
                     float montoCompra = GestorCajasPapel.getTotalCompras(); // Obteniendo el monto de la compra desde GestorCajasPapel
-                    JOptionPane.showMessageDialog(null, "La compra realizada por " + cantidadCompra + " cajas al costo " + costoCompra + " es igual a " + montoCompra);
+                    JOptionPane.showMessageDialog(null, "La compra realizada por el precio de " + cantidadCompra + " cajas al costo " + costoCompra + " es igual a " + montoCompra);
                     break;
                 case 'b':
                     // Registro de venta de cajas de papel
@@ -50,7 +50,7 @@ public class MENUCAJAS {
                     int cantidadVenta = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de cajas vendidas:"));
                     GestorCajasPapel.registrarVenta(precioVenta, cantidadVenta);
                     float montoVenta = GestorCajasPapel.getTotalVentas(); // Obteniendo el monto de la venta desde GestorCajasPapel
-                    JOptionPane.showMessageDialog(null, "La venta realizada por " + cantidadVenta + " cajas al precio de " + precioVenta + " es igual a " + montoVenta);
+                    JOptionPane.showMessageDialog(null, "La venta realizada por el precio de " + cantidadVenta + " cajas al precio de " + precioVenta + " es igual a " + montoVenta);
                     break;
 
                 case 'c':
