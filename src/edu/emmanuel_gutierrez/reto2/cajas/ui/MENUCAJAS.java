@@ -42,7 +42,7 @@ public class MENUCAJAS {
                     int cantidadCompra = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de cajas compradas:"));
                     GestorCajasPapel.registrarCompra(costoCompra, cantidadCompra);
                     float montoCompra = GestorCajasPapel.getTotalCompras(); // Obteniendo el monto de la compra desde GestorCajasPapel
-                    JOptionPane.showMessageDialog(null, "La compra realizada por el precio de " + cantidadCompra + " cajas al costo " + costoCompra + " es igual a " + montoCompra);
+                    JOptionPane.showMessageDialog(null, "La compra realizada por el precio de " + cantidadCompra + " cajas al costo de " + costoCompra + " es igual a " + montoCompra);
                     break;
                 case 'b':
                     // Registro de venta de cajas de papel
