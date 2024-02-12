@@ -10,7 +10,6 @@ public class ParesEImpares {
 
     /**
      * Genera una matriz de números aleatorios ordenados según lo especificado.
-     *
      * @param filas    Número de filas en la matriz.
      * @param columnas Número de columnas en la matriz.
      * @return Una matriz de números aleatorios.
@@ -68,7 +67,6 @@ public class ParesEImpares {
 
     /**
      * Imprime los números generados aleatoriamente en filas y columnas.
-     *
      * @param matriz Matriz de números.
      */
     public static void imprimirNumerosAleatorios(int[][] matriz) {
