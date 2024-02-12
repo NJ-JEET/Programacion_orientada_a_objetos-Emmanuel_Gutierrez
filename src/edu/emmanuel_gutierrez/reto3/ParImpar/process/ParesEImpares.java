@@ -29,7 +29,6 @@ public class ParesEImpares {
 
     /**
      * Cuenta el número de pares e impares generados en la matriz.
-     *
      * @param matriz Matriz de números.
      */
     public static void contarParesImpares(int[][] matriz) {
