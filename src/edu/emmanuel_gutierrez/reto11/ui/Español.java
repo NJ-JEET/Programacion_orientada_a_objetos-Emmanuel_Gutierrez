@@ -1,98 +1,6 @@
 package edu.emmanuel_gutierrez.reto11.ui;
 
-import edu.emmanuel_gutierrez.reto8.data.Idioma;
-
-public interface Español extends Idioma {
-    @Override
-    public String getMenu() {
-        return null;
-    }
-
-    @Override
-    public String getEnterFirstNumberMessage() {
-        return null;
-    }
-
-    @Override
-    public String getEnterSecondNumberMessage() {
-        return null;
-    }
-
-    @Override
-    public String getResultMessage(double result) {
-        return null;
-    }
-
-    @Override
-    public String getGoodbyeMessage() {
-        return null;
-    }
-
-    @Override
-    public String getInvalidOption() {
-        return null;
-    }
-
-    @Override
-    public String getEnterNumberMessage() {
-        return null;
-    }
-
-    @Override
-    public String getLogarithmBaseMessage() {
-        return null;
-    }
-
-    @Override
-    public String getPowerMessage(int base, int exponente, double resultado) {
-        return null;
-    }
-
-    @Override
-    public String getEnterExponentMessage() {
-        return null;
-    }
-
-    @Override
-    public String getRootIndex() {
-        return null;
-    }
-
-    @Override
-    public String getAdditionResultMessage(int numero1, int numero2, double resultado) {
-        return null;
-    }
-
-    @Override
-    public String getSubtractionResultMessage(int numero1, int numero2, double resultado) {
-        return null;
-    }
-
-    @Override
-    public String getMultiplicationResultMessage(int numero1, int numero2, double resultado) {
-        return null;
-    }
-
-    @Override
-    public String getDivisionResultMessage(int numero1, int numero2, double resultado) {
-        return null;
-    }
-
-    @Override
-    public String getRemainderResultMessage(int numero1, int numero2, double resultado) {
-        return null;
-    }
-
-    @Override
-    public String getSquareRootMessage(double numero, int indice, double resultado) {
-        return null;
-    }
-
-    @Override
-    public String getLogarithmMessage(int numero, int base, double resultado) {
-        return null;
-    }
-
+public class Español implements Idioma {
     @Override
     public String getSeleccionIdioma() {
         return "Seleccione su idioma / Select your language:";
@@ -100,7 +8,7 @@ public interface Español extends Idioma {
 
     @Override
     public String getSeleccioneLibro() {
-        return "Seleccione el libro que desea ver:";
+        return "Seleccione el libro que desea consultar:";
     }
 
     @Override
@@ -121,5 +29,45 @@ public interface Español extends Idioma {
     @Override
     public String getOpcionNoValida() {
         return "Opción no válida";
+    }
+
+    @Override
+    public String getVerPalabrasComunes() {
+        return "Ver palabras comunes";
+    }
+
+    @Override
+    public String getContarVocales() {
+        return "Contar vocales";
+    }
+
+    @Override
+    public String getImprimirPalabrasVocal() {
+        return "Imprimir palabras que empiezan con vocal";
+    }
+
+    @Override
+    public String getImprimirPalabrasImpar() {
+        return "Imprimir palabras con longitud impar";
+    }
+
+    @Override
+    public String getEncontrarPalabraLarga() {
+        return "Encontrar la palabra más larga";
+    }
+
+    @Override
+    public String getEncontrarPalabraCorta() {
+        return "Encontrar la palabra más corta";
+    }
+
+    @Override
+    public String getIdentificarPalabraCondicion() {
+        return "Identificar palabras que cumplen con cierta condición";
+    }
+
+    @Override
+    public String getSalir() {
+        return "Salir";
     }
 }

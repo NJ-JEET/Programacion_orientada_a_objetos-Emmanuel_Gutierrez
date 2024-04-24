@@ -8,7 +8,7 @@ public class Ingles implements Idioma {
 
     @Override
     public String getSeleccioneLibro() {
-        return "Select the book you want to see:";
+        return "Select the book you want to consult:";
     }
 
     @Override

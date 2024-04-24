@@ -4,8 +4,7 @@ import javax.swing.*;
 import static edu.emmanuel_gutierrez.reto11.process.FileProcessor.*;
 
 public class CLI {
-    // Elimina la línea que inicializa el idioma
-    // private static final Idioma idioma = SeleccionIdioma.seleccionarIdioma("ESP");
+    private static final String RUTA_BASE = "C:\\Users\\cg750\\IdeaProjects\\Programacion_orientada_a_objetos-Emmanuel_Gutierrez\\src\\edu\\emmanuel_gutierrez\\reto11\\resources\\";
 
     public static void launchApp() {
         // Solicitar al usuario que seleccione el idioma
@@ -22,8 +21,29 @@ public class CLI {
             return;
         }
 
-        // Obtener el nombre del archivo según el idioma seleccionado
-        String fileName = obtenerNombreArchivo(idioma);
+        // Crear un array con los nombres de los libros según el idioma seleccionado
+        String[] libros;
+        if (idiomaSeleccionado.equals("1")) {
+            libros = new String[]{"el_hobbit.txt", "el_principito.txt", "el_padrino.txt", "1984.txt", "rebelion_en_la_granja.txt"};
+        } else {
+            libros = new String[]{"The Hobbit", "The Little Prince", "The Godfather", "1984", "Animal Farm"};
+        }
+
+        // Crear un JComboBox con los nombres de los libros
+        JComboBox<String> comboBox = new JComboBox<>(libros);
+
+        // Mostrar el JComboBox en un JOptionPane y obtener la selección del usuario
+        int result = JOptionPane.showConfirmDialog(null, comboBox, idioma.getSeleccioneLibro(), JOptionPane.OK_CANCEL_OPTION);
+
+        // Si el usuario hace clic en "OK", obtener el nombre del libro seleccionado
+        String fileName;
+        if (result == JOptionPane.OK_OPTION) {
+            fileName = RUTA_BASE + comboBox.getSelectedItem();
+            System.out.println("Ruta del archivo seleccionado: " + fileName); // Mensaje de depuración
+        } else {
+            // Si el usuario hace clic en "Cancelar" o cierra la ventana, salir de la aplicación
+            return;
+        }
 
         boolean continuar = true;
         while (continuar) {

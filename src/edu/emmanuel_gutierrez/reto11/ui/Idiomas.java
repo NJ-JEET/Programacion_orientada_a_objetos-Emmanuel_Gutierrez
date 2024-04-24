@@ -15,7 +15,7 @@ public class Idiomas {
             case "ENG":
                 return new Ingles();
             default:
-                throw new IllegalArgumentException("Idioma no disponible / Language not available");
+                throw new IllegalArgumentException("Idioma invalido / Invalid language");
         }
     }
 
