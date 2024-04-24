@@ -1,98 +1,6 @@
 package edu.emmanuel_gutierrez.reto11.ui;
 
-import edu.emmanuel_gutierrez.reto8.data.Idioma;
-
-public interface Ingles extends Idioma {
-    @Override
-    public String getMenu() {
-        return null;
-    }
-
-    @Override
-    public String getEnterFirstNumberMessage() {
-        return null;
-    }
-
-    @Override
-    public String getEnterSecondNumberMessage() {
-        return null;
-    }
-
-    @Override
-    public String getResultMessage(double result) {
-        return null;
-    }
-
-    @Override
-    public String getGoodbyeMessage() {
-        return null;
-    }
-
-    @Override
-    public String getInvalidOption() {
-        return null;
-    }
-
-    @Override
-    public String getEnterNumberMessage() {
-        return null;
-    }
-
-    @Override
-    public String getLogarithmBaseMessage() {
-        return null;
-    }
-
-    @Override
-    public String getPowerMessage(int base, int exponente, double resultado) {
-        return null;
-    }
-
-    @Override
-    public String getEnterExponentMessage() {
-        return null;
-    }
-
-    @Override
-    public String getRootIndex() {
-        return null;
-    }
-
-    @Override
-    public String getAdditionResultMessage(int numero1, int numero2, double resultado) {
-        return null;
-    }
-
-    @Override
-    public String getSubtractionResultMessage(int numero1, int numero2, double resultado) {
-        return null;
-    }
-
-    @Override
-    public String getMultiplicationResultMessage(int numero1, int numero2, double resultado) {
-        return null;
-    }
-
-    @Override
-    public String getDivisionResultMessage(int numero1, int numero2, double resultado) {
-        return null;
-    }
-
-    @Override
-    public String getRemainderResultMessage(int numero1, int numero2, double resultado) {
-        return null;
-    }
-
-    @Override
-    public String getSquareRootMessage(double numero, int indice, double resultado) {
-        return null;
-    }
-
-    @Override
-    public String getLogarithmMessage(int numero, int base, double resultado) {
-        return null;
-    }
-
+public class Ingles implements Idioma {
     @Override
     public String getSeleccionIdioma() {
         return "Select your language:";
@@ -105,7 +13,7 @@ public interface Ingles extends Idioma {
 
     @Override
     public String getMenuLibros() {
-        return "1. el_hobbit.txt\n2. el_principito.txt\n3. el_padrino.txt\n4. 1984.txt\n5. rebelion_en_la_granja.txt";
+        return "1. The Hobbit\n2. The Little Prince\n3. The Godfather\n4. 1984\n5. Animal Farm";
     }
 
     @Override
@@ -121,5 +29,45 @@ public interface Ingles extends Idioma {
     @Override
     public String getOpcionNoValida() {
         return "Invalid option";
+    }
+
+    @Override
+    public String getVerPalabrasComunes() {
+        return "View common words";
+    }
+
+    @Override
+    public String getContarVocales() {
+        return "Count vowels";
+    }
+
+    @Override
+    public String getImprimirPalabrasVocal() {
+        return "Print words starting with a vowel";
+    }
+
+    @Override
+    public String getImprimirPalabrasImpar() {
+        return "Print words with odd length";
+    }
+
+    @Override
+    public String getEncontrarPalabraLarga() {
+        return "Find longest word";
+    }
+
+    @Override
+    public String getEncontrarPalabraCorta() {
+        return "Find shortest word";
+    }
+
+    @Override
+    public String getIdentificarPalabraCondicion() {
+        return "Identify words meeting condition";
+    }
+
+    @Override
+    public String getSalir() {
+        return "Exit";
     }
 }
